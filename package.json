@@ -1,0 +1,29 @@
+{
+  "name": "local-ai-chat-app",
+  "version": "1.0.0",
+  "description": "Local AI chat client for Ollama and Gemini with dynamic theme switching",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node scripts/ensure-build.js && electron .",
+    "dev:app": "set ELECTRON_DEV=1&& electron ."
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.3",
+    "dompurify": "^3.4.13",
+    "lucide-react": "^0.475.0",
+    "marked": "^12.0.1",
+    "prismjs": "^1.29.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^31.3.0",
+    "vite": "^5.4.1"
+  }
+}
